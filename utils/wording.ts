@@ -4,7 +4,7 @@ import path from 'path';
 import axios from 'axios';
 
 // @ts-ignore
-export const extractWordingData = (data: any, lang: string = 'fr') => {
+export const extractWordingData = (data: any, lang: string = 'fr',mediaDir: string) => {
   if (!data) return data;
 
   if (
@@ -16,8 +16,7 @@ export const extractWordingData = (data: any, lang: string = 'fr') => {
     const docUrl = 'http://localhost:1331' + docPath;
     saveMedia(
       docUrl,
-      '../project-boa-agencedirecte-frontoffice/public/backups'
-    );
+        mediaDir    );
     return data[lang].replace('/adfiles/uploads', '/backups');
   }
 
@@ -25,7 +24,7 @@ export const extractWordingData = (data: any, lang: string = 'fr') => {
     const imageUrl = 'http://localhost:1331' + data.url;
     saveMedia(
       imageUrl,
-      '../project-boa-agencedirecte-frontoffice/public/backups'
+        mediaDir
     );
 
     const updatedUrl = data.url.replace('/uploads', '/backups');
@@ -35,7 +34,7 @@ export const extractWordingData = (data: any, lang: string = 'fr') => {
 
   if (Array.isArray(data)) {
     // @ts-ignore
-    return data.map((element) => extractWordingData(element, lang));
+    return data.map((element) => extractWordingData(element, lang, mediaDir));
   }
 
   if (typeof data === 'object') {
@@ -44,7 +43,7 @@ export const extractWordingData = (data: any, lang: string = 'fr') => {
     const extractedWording = {};
     Object.keys(data).forEach((key) => {
       // @ts-ignore
-      extractedWording[key] = extractWordingData(data[key], lang) ?? undefined;
+      extractedWording[key] = extractWordingData(data[key], lang, mediaDir) ?? undefined;
       if (typeof data[key] === 'string') {
         console.log('yes');
       }
@@ -56,11 +55,12 @@ export const extractWordingData = (data: any, lang: string = 'fr') => {
 };
 export const useWordingQueryOrDefault = async <TData>(
   query: string,
-  language: string
+  language: string,
+  mediaDir: string
 ) => {
   const result = await client.request(query);
   const data = result;
-  return extractWordingData(data, language) as TData;
+  return extractWordingData(data, language, mediaDir) as TData;
 };
 
 async function saveMedia(url, directory) {
