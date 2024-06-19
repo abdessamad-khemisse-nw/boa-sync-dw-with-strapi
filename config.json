@@ -1,3 +1,14 @@
 {
-
+  "queries": [
+    {
+      "name": "LandingPageQuery",
+      "path": "out/LandingPage"
+    },
+    {
+      "name": "MrePageQuery",
+      "path": "out/MrePage"
+    }
+  ],
+  "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
+  "languages": ["en", "fr", "es", "ar", "it", "nl", "de"]
 }
