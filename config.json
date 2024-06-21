@@ -7,6 +7,10 @@
     {
       "name": "MrePageQuery",
       "path": "out/MrePage"
+    },
+    {
+      "name": "ParticularPageQuery",
+      "path": "out/PartiuclarPage"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
