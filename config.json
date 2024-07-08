@@ -1,16 +1,24 @@
 {
   "queries": [
     {
-      "name": "LandingPageQuery",
+      "queryName": "LandingPageQuery",
+      "exportName": "LandingPage",
       "path": "out/LandingPage"
     },
     {
-      "name": "MrePageQuery",
+      "queryName": "MrePageQuery",
+      "exportName": "MREPage",
       "path": "out/MrePage"
     },
     {
-      "name": "ParticularPageQuery",
+      "queryName": "ParticularPageQuery",
+      "exportName": "ParticularPage",
       "path": "out/PartiuclarPage"
+    },
+    {
+      "queryName": "StudentPageQuery",
+      "exportName": "StudentPage",
+      "path": "out/StudentPage"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",

@@ -2,9 +2,14 @@ import { client } from './graphql';
 import fs from 'node:fs';
 import path from 'path';
 import axios from 'axios';
+import {DEFAULT_LANG} from "./constants";
 
 // @ts-ignore
-export const extractWordingData = (data: any, lang: string = 'fr',mediaDir: string) => {
+export const extractWordingData = (
+  data: any,
+  lang: string = DEFAULT_LANG,
+  mediaDir: string
+) => {
   if (!data) return data;
 
   if (
@@ -14,18 +19,13 @@ export const extractWordingData = (data: any, lang: string = 'fr',mediaDir: stri
   ) {
     const docPath = data[lang].replace('/adfiles', '');
     const docUrl = 'http://localhost:1331' + docPath;
-    saveMedia(
-      docUrl,
-        mediaDir    );
+    saveMedia(docUrl, mediaDir);
     return data[lang].replace('/adfiles/uploads', '/backups');
   }
 
   if (data.url) {
     const imageUrl = 'http://localhost:1331' + data.url;
-    saveMedia(
-      imageUrl,
-        mediaDir
-    );
+    saveMedia(imageUrl, mediaDir);
 
     const updatedUrl = data.url.replace('/uploads', '/backups');
     const object = { url: updatedUrl, alternativeText: data.alternativeText };
@@ -43,10 +43,8 @@ export const extractWordingData = (data: any, lang: string = 'fr',mediaDir: stri
     const extractedWording = {};
     Object.keys(data).forEach((key) => {
       // @ts-ignore
-      extractedWording[key] = extractWordingData(data[key], lang, mediaDir) ?? undefined;
-      if (typeof data[key] === 'string') {
-        console.log('yes');
-      }
+      extractedWording[key] =
+        extractWordingData(data[key], lang, mediaDir) ?? undefined;
     });
     return extractedWording;
   }

@@ -2,33 +2,38 @@ import { LandingPageQuery } from './queries/LandingPage';
 import fs from 'node:fs';
 import { useWordingQueryOrDefault } from './utils/wording';
 import { MrePageQuery } from './queries/MrePage';
-import { ParticularPageQuery } from './queries/ParticularPage'
+import { ParticularPageQuery } from './queries/ParticularPage';
+import { StudentPageQuery } from './queries/StudentPage';
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
 const queriesMap = {
-    LandingPageQuery,
-    MrePageQuery,
-    ParticularPageQuery
+  LandingPageQuery,
+  MrePageQuery,
+  ParticularPageQuery,
+  StudentPageQuery
 };
 
 config.queries.forEach((queryConfig) => {
-    const queryName = queryConfig.name;
-    const queryPath = queryConfig.path;
+  const queryName = queryConfig.queryName;
+  const exportName = queryConfig.exportName;
+  const queryPath = queryConfig.path;
 
-    config.languages.forEach((language) => {
-        useWordingQueryOrDefault(queriesMap[queryName](language), language, config.mediaDir).then(
-            (data) => {
-                const filePath = `${queryPath}/${language}.ts`;
-                const fileContent = `export const ${queryName}${language.toUpperCase()} = ${JSON.stringify(data)}`;
-                fs.mkdirSync(queryPath, { recursive: true });
+  config.languages.forEach((language) => {
+    useWordingQueryOrDefault(
+      queriesMap[queryName](language),
+      language,
+      config.mediaDir
+    ).then((data) => {
+      const filePath = `${queryPath}/${language}.ts`;
+      const fileContent = `export const ${exportName}${language.toUpperCase()} = ${JSON.stringify(data)}`;
+      fs.mkdirSync(queryPath, { recursive: true });
 
-                fs.writeFile(filePath, fileContent, (err) => {
-                    if (err) {
-                        console.log('Writing Query Error : ' + err);
-                    }
-                });
-            }
-        );
+      fs.writeFile(filePath, fileContent, (err) => {
+        if (err) {
+          console.log('Writing Query Error : ' + err);
+        }
+      });
     });
+  });
 });
