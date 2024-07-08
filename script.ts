@@ -4,6 +4,7 @@ import { useWordingQueryOrDefault } from './utils/wording';
 import { MrePageQuery } from './queries/MrePage';
 import { ParticularPageQuery } from './queries/ParticularPage';
 import { StudentPageQuery } from './queries/StudentPage';
+import { CreateAccountPageQuery } from './queries/CreateAccountPageQuery'
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -11,7 +12,8 @@ const queriesMap = {
   LandingPageQuery,
   MrePageQuery,
   ParticularPageQuery,
-  StudentPageQuery
+  StudentPageQuery,
+  CreateAccountPageQuery
 };
 
 config.queries.forEach((queryConfig) => {

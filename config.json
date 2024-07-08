@@ -19,6 +19,11 @@
       "queryName": "StudentPageQuery",
       "exportName": "StudentPage",
       "path": "out/StudentPage"
+    },
+    {
+      "queryName": "CreateAccountPageQuery",
+      "exportName": "CreateAccountPage",
+      "path": "out/CreateAccountPage"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
