@@ -1,6 +1,7 @@
-import { gql } from "graphql-request";
+import { gql } from 'graphql-request';
+import {DEFAULT_LANG} from "../utils/constants";
 
-export const ParticularPageQuery = (language: string = 'fr') => {
+export const ParticularPageQuery = (language: string = DEFAULT_LANG) => {
   return gql`
     {
       particularPage {
