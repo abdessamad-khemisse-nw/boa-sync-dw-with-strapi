@@ -24,6 +24,11 @@
       "queryName": "CreateAccountPageQuery",
       "exportName": "CreateAccountPage",
       "path": "out/CreateAccountPage"
+    },
+    {
+      "queryName": "PinnedOfferQuery",
+      "exportName": "PinnedOffer",
+      "path": "out/PinnedOffer"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
