@@ -24,6 +24,11 @@
       "queryName": "CreateAccountPageQuery",
       "exportName": "CreateAccountPage",
       "path": "out/CreateAccountPage"
+    },
+    {
+      "queryName": "VerificationStepWordingQuery",
+      "exportName": "VerificationStep",
+      "path": "out/VerificationStep"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
