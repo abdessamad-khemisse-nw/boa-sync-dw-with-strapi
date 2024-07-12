@@ -26,6 +26,11 @@
       "path": "out/CreateAccountPage"
     },
     {
+      "queryName": "PinnedOfferQuery",
+      "exportName": "PinnedOffer",
+      "path": "out/PinnedOffer"
+    },
+    {
       "queryName": "VerificationStepWordingQuery",
       "exportName": "VerificationStep",
       "path": "out/VerificationStep"
