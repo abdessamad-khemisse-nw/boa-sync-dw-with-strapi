@@ -37,8 +37,21 @@ export const extractWordingData = (
     return data.map((element) => extractWordingData(element, lang, mediaDir));
   }
 
-  if (typeof data === 'object') {
-    if (data.hasOwnProperty(lang)) return data[lang];
+  if (typeof data === "object") {
+    if (data.hasOwnProperty(lang)) {
+      if (data[lang] !== null && data[lang].hasOwnProperty("url")) {
+        const imageUrl = "http://localhost:1331" + data[lang].url;
+        saveMedia(imageUrl, mediaDir);
+
+        const updatedUrl = data[lang].url.replace("/uploads", "/backups");
+        const object = {
+          url: updatedUrl,
+          alternativeText: data[lang].alternativeText,
+        };
+        return object;
+      }
+      return data[lang];
+    }
 
     const extractedWording = {};
     Object.keys(data).forEach((key) => {
