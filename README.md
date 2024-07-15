@@ -33,6 +33,13 @@ npm run launch
 ```
 - Check if the wordings are generated in the out directory
 
+## Nice to have
+To facilitate the process more and make it 10X effective, try to add the project script in the same directory as your frontoffice app, and you can change the path from the config to your destination from the front office 
+Ex : 
+
+for MRE you can add `path: '../project-boa-agencedirecte-frontoffice/src/pages/morrocan-abroad/wordings/'`
+And this change will automatically include the wordings to the exact destination
+
 And voila 
 
 [Thank you for contributing to this impactful migration] 😀

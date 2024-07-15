@@ -34,7 +34,8 @@
       "queryName": "VerificationStepWordingQuery",
       "exportName": "VerificationStep",
       "path": "out/VerificationStep"
-    },{
+    },
+    {
       "queryName": "ContactPageQuery",
       "exportName": "ContactPage",
       "path": "out/ContactPage"
@@ -53,6 +54,11 @@
       "queryName": "OtherProductsWordingQuery",
       "exportName": "OtherProducts",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/myspace/wordings"
+    },
+    {
+      "queryName": "ClientInfoStepQuery",
+      "exportName": "ClientInfoStepPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
