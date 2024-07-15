@@ -59,6 +59,11 @@
       "queryName": "ClientInfoStepQuery",
       "exportName": "ClientInfoStepPage",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings"
+    },
+    {
+      "queryName": "SeoOpenAccountQuery",
+      "exportName": "SeoOpenAccountPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
