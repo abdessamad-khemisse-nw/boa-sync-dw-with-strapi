@@ -31,6 +31,10 @@
       "path": "out/PinnedOffer"
     },
     {
+      "queryName": "VerificationStepWordingQuery",
+      "exportName": "VerificationStep",
+      "path": "out/VerificationStep"
+    },
       "queryName": "ContactPageQuery",
       "exportName": "ContactPage",
       "path": "out/ContactPage"

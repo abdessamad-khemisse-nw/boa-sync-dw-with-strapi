@@ -6,6 +6,7 @@ import { ParticularPageQuery } from './queries/ParticularPage';
 import { StudentPageQuery } from './queries/StudentPage';
 import { CreateAccountPageQuery } from './queries/CreateAccountPageQuery'
 import {PinnedOfferQuery} from "./queries/PinnedOfferQuery";
+import { VerificationStepWordingQuery } from './queries/VerificationStepWordingQuery';
 import {ContactPageQuery} from "./queries/ContactPage";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
@@ -17,6 +18,7 @@ const queriesMap = {
   StudentPageQuery,
   CreateAccountPageQuery,
   PinnedOfferQuery,
+  VerificationStepWordingQuery,
   ContactPageQuery
 };
 
