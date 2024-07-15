@@ -6,6 +6,7 @@ import { ParticularPageQuery } from './queries/ParticularPage';
 import { StudentPageQuery } from './queries/StudentPage';
 import { CreateAccountPageQuery } from './queries/CreateAccountPageQuery'
 import {PinnedOfferQuery} from "./queries/PinnedOfferQuery";
+import {ContactPageQuery} from "./queries/ContactPage";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -15,7 +16,8 @@ const queriesMap = {
   ParticularPageQuery,
   StudentPageQuery,
   CreateAccountPageQuery,
-  PinnedOfferQuery
+  PinnedOfferQuery,
+  ContactPageQuery
 };
 
 config.queries.forEach((queryConfig) => {

@@ -29,6 +29,11 @@
       "queryName": "PinnedOfferQuery",
       "exportName": "PinnedOffer",
       "path": "out/PinnedOffer"
+    },
+    {
+      "queryName": "ContactPageQuery",
+      "exportName": "ContactPage",
+      "path": "out/ContactPage"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
