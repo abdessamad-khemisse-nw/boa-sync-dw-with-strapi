@@ -34,10 +34,25 @@
       "queryName": "VerificationStepWordingQuery",
       "exportName": "VerificationStep",
       "path": "out/VerificationStep"
-    },
+    },{
       "queryName": "ContactPageQuery",
       "exportName": "ContactPage",
       "path": "out/ContactPage"
+    },
+    {
+      "queryName": "ContactDetailsVerificationQuery",
+      "exportName": "ContactDetailsVerification",
+      "path": "out/ContactDetailsVerification"
+    },
+    {
+      "queryName": "MentionsLegalesPageQuery",
+      "exportName": "MentionsLegalesPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/legal-mentions/wordings"
+    },
+    {
+      "queryName": "OtherProductsWordingQuery",
+      "exportName": "OtherProducts",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/myspace/wordings"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",

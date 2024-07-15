@@ -5,9 +5,12 @@ import { MrePageQuery } from './queries/MrePage';
 import { ParticularPageQuery } from './queries/ParticularPage';
 import { StudentPageQuery } from './queries/StudentPage';
 import { CreateAccountPageQuery } from './queries/CreateAccountPageQuery'
+import MentionsLegalesPageQuery from "./queries/MentionsLegalesPage";
+import {ContactDetailsVerificationQuery} from "./queries/ContactDetailsVerification";
 import {PinnedOfferQuery} from "./queries/PinnedOfferQuery";
 import { VerificationStepWordingQuery } from './queries/VerificationStepWordingQuery';
 import {ContactPageQuery} from "./queries/ContactPage";
+import OtherProductsWordingQuery from "./queries/OtherProducts";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -17,10 +20,14 @@ const queriesMap = {
   ParticularPageQuery,
   StudentPageQuery,
   CreateAccountPageQuery,
+  ContactDetailsVerificationQuery,
+  MentionsLegalesPageQuery,
+  OtherProductsWordingQuery,
   PinnedOfferQuery,
   VerificationStepWordingQuery,
   ContactPageQuery
 };
+
 
 config.queries.forEach((queryConfig) => {
   const queryName = queryConfig.queryName;
