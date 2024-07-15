@@ -1,0 +1,68 @@
+import {gql} from "graphql-request";
+import {DEFAULT_LANG} from "../utils/constants";
+
+export const ContactPageQuery = (lang: any = DEFAULT_LANG) => {
+    return gql`
+        query{
+            contactPage(id:1){
+                subTitleFirst{
+                    ${lang}
+                }
+                subTitleSecond{
+                    ${lang}
+                }
+                title{
+                    ${lang}
+                }
+                subTitleDescription{
+                    ${lang}
+                }
+                titleDescription{
+                    ${lang}
+                }
+                messageLabel{
+                    ${lang}
+                }
+                messageError{
+                    ${lang}
+                }
+                firstNameLabel{
+                    ${lang}
+                }
+                firstNameError{
+                    ${lang}
+                }
+                lastNameLabel{
+                    ${lang}
+                }
+                lastNameError{
+                    ${lang}
+                }
+                emailLabel{
+                    ${lang}
+                }
+                emailError{
+                    ${lang}
+                }
+                phoneLabel{
+                    ${lang}
+                }
+                phoneError{
+                    ${lang}
+                }
+                numTelAD{
+                    ${lang}
+                }
+                addressAD{
+                    ${lang}
+                }
+                emailAD{
+                    ${lang}
+                }
+                buttonText{
+                    ${lang}
+                }
+            }
+        }
+    `;
+};
