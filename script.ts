@@ -11,6 +11,7 @@ import {PinnedOfferQuery} from "./queries/PinnedOfferQuery";
 import { VerificationStepWordingQuery } from './queries/VerificationStepWordingQuery';
 import {ContactPageQuery} from "./queries/ContactPage";
 import OtherProductsWordingQuery from "./queries/OtherProducts";
+import { ClientInfoStepQuery } from './queries/ClientInfoStepQuery';
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -25,7 +26,8 @@ const queriesMap = {
   OtherProductsWordingQuery,
   PinnedOfferQuery,
   VerificationStepWordingQuery,
-  ContactPageQuery
+  ContactPageQuery,
+  ClientInfoStepQuery
 };
 
 
