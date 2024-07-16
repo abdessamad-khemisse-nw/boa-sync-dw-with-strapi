@@ -63,7 +63,7 @@
     {
       "queryName": "BankCardsPageQuery",
       "exportName": "BankCardsPage",
-      "path": "out/BankCardsPage"
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/bank-cards/wordings"
     },
     {
       "queryName": "SeoOpenAccountQuery",
