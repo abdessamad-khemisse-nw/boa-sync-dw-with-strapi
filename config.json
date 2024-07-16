@@ -61,6 +61,11 @@
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings"
     },
     {
+      "queryName": "BankCardsPageQuery",
+      "exportName": "BankCardsPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/bank-cards/wordings"
+    },
+    {
       "queryName": "SeoOpenAccountQuery",
       "exportName": "SeoOpenAccountPage",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"

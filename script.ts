@@ -12,6 +12,7 @@ import { VerificationStepWordingQuery } from './queries/VerificationStepWordingQ
 import {ContactPageQuery} from "./queries/ContactPage";
 import OtherProductsWordingQuery from "./queries/OtherProducts";
 import { ClientInfoStepQuery } from './queries/ClientInfoStepQuery';
+import { BankCardsPageQuery } from './queries/BankCardsPage';
 import {SeoOpenAccountQuery} from "./queries/SeoOpenAccountPage";
 import ConventionWordingQuery from "./queries/ConventionWordingQuery";
 
@@ -30,6 +31,7 @@ const queriesMap = {
   VerificationStepWordingQuery,
   ContactPageQuery,
   ClientInfoStepQuery,
+  BankCardsPageQuery,
   SeoOpenAccountQuery,
   ConventionWordingQuery
 };
