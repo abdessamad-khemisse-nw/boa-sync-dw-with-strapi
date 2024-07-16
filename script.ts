@@ -13,6 +13,7 @@ import {ContactPageQuery} from "./queries/ContactPage";
 import OtherProductsWordingQuery from "./queries/OtherProducts";
 import { ClientInfoStepQuery } from './queries/ClientInfoStepQuery';
 import { BankCardsPageQuery } from './queries/BankCardsPage';
+import {SeoOpenAccountQuery} from "./queries/SeoOpenAccountPage";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -29,7 +30,8 @@ const queriesMap = {
   VerificationStepWordingQuery,
   ContactPageQuery,
   ClientInfoStepQuery,
-  BankCardsPageQuery
+  BankCardsPageQuery,
+  SeoOpenAccountQuery
 };
 
 

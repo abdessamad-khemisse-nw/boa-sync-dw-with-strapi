@@ -64,6 +64,11 @@
       "queryName": "BankCardsPageQuery",
       "exportName": "BankCardsPage",
       "path": "out/BankCardsPage"
+    },
+    {
+      "queryName": "SeoOpenAccountQuery",
+      "exportName": "SeoOpenAccountPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
