@@ -64,7 +64,13 @@
       "queryName": "SeoOpenAccountQuery",
       "exportName": "SeoOpenAccountPage",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"
+    },
+    {
+      "queryName": "FAQPageQuery",
+      "exportName": "FAQPage",
+      "path": "out/FAQPage"
     }
+
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
   "languages": ["en", "fr", "es", "ar", "it", "nl", "de"]
