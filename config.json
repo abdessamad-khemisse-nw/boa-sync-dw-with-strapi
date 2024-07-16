@@ -68,7 +68,7 @@
     {
       "queryName": "FAQPageQuery",
       "exportName": "FAQPage",
-      "path": "out/FAQPage"
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/faq/FAQPage/wordings"
     }
 
   ],
