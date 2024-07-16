@@ -64,6 +64,11 @@
       "queryName": "SeoOpenAccountQuery",
       "exportName": "SeoOpenAccountPage",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"
+    },
+    {
+      "queryName": "ConventionWordingQuery",
+      "exportName": "ConventionWording",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/client-info-recap/wordings"
     }
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
