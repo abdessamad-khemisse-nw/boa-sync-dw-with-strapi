@@ -15,6 +15,7 @@ import { ClientInfoStepQuery } from './queries/ClientInfoStepQuery';
 import { BankCardsPageQuery } from './queries/BankCardsPage';
 import {SeoOpenAccountQuery} from "./queries/SeoOpenAccountPage";
 import ConventionWordingQuery from "./queries/ConventionWordingQuery";
+import {SatisfactionSurveyPageQuery} from "./queries/SatisfactionSurveyPage";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -33,7 +34,8 @@ const queriesMap = {
   ClientInfoStepQuery,
   BankCardsPageQuery,
   SeoOpenAccountQuery,
-  ConventionWordingQuery
+  ConventionWordingQuery,
+  SatisfactionSurveyPageQuery
 };
 
 
