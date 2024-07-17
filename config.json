@@ -74,7 +74,13 @@
       "queryName": "ConventionWordingQuery",
       "exportName": "ConventionWording",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/client-info-recap/wordings"
+    },
+    {
+      "queryName": "SatisfactionSurveyPageQuery",
+      "exportName": "SatisfactionSurveyPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/satisfaction-survey/SatisfactionSurveyPage/wordings"
     }
+
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
   "languages": ["en", "fr", "es", "ar", "it", "nl", "de"]
