@@ -14,6 +14,7 @@ import OtherProductsWordingQuery from "./queries/OtherProducts";
 import { ClientInfoStepQuery } from './queries/ClientInfoStepQuery';
 import { BankCardsPageQuery } from './queries/BankCardsPage';
 import {SeoOpenAccountQuery} from "./queries/SeoOpenAccountPage";
+import {FAQPageQuery} from "./queries/FAQPageQuery";
 import ConventionWordingQuery from "./queries/ConventionWordingQuery";
 import {SatisfactionSurveyPageQuery} from "./queries/SatisfactionSurveyPage";
 
@@ -32,6 +33,8 @@ const queriesMap = {
   VerificationStepWordingQuery,
   ContactPageQuery,
   ClientInfoStepQuery,
+  SeoOpenAccountQuery,
+  FAQPageQuery,
   BankCardsPageQuery,
   SeoOpenAccountQuery,
   ConventionWordingQuery,
