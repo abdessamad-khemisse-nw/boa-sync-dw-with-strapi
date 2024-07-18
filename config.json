@@ -84,6 +84,11 @@
       "queryName": "SatisfactionSurveyPageQuery",
       "exportName": "SatisfactionSurveyPage",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/satisfaction-survey/SatisfactionSurveyPage/wordings"
+    },
+    {
+      "queryName": "NotificationsQuery",
+      "exportName": "Notifications",
+      "path": "../project-boa-agencedirecte-frontoffice/src/commons/components/Notifications/CustomMessage/wordings"
     }
 
   ],
