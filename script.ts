@@ -12,8 +12,11 @@ import { VerificationStepWordingQuery } from './queries/VerificationStepWordingQ
 import {ContactPageQuery} from "./queries/ContactPage";
 import OtherProductsWordingQuery from "./queries/OtherProducts";
 import { ClientInfoStepQuery } from './queries/ClientInfoStepQuery';
+import { BankCardsPageQuery } from './queries/BankCardsPage';
 import {SeoOpenAccountQuery} from "./queries/SeoOpenAccountPage";
 import {FAQPageQuery} from "./queries/FAQPageQuery";
+import ConventionWordingQuery from "./queries/ConventionWordingQuery";
+import {SatisfactionSurveyPageQuery} from "./queries/SatisfactionSurveyPage";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -31,8 +34,13 @@ const queriesMap = {
   ContactPageQuery,
   ClientInfoStepQuery,
   SeoOpenAccountQuery,
-  FAQPageQuery
+  FAQPageQuery,
+  BankCardsPageQuery,
+  SeoOpenAccountQuery,
+  ConventionWordingQuery,
+  SatisfactionSurveyPageQuery
 };
+
 
 
 config.queries.forEach((queryConfig) => {
