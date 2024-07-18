@@ -84,9 +84,20 @@
       "queryName": "SatisfactionSurveyPageQuery",
       "exportName": "SatisfactionSurveyPage",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/satisfaction-survey/SatisfactionSurveyPage/wordings"
+    },
+    {
+      "queryName": "WelcomePageQuery",
+      "exportName": "WelcomePage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/welcome/wordings"
+    },
+    {
+      "queryName": "MySpacePageQuery",
+      "exportName": "MySpacePage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/myspace/components/MySpace/wordings"
     }
 
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
   "languages": ["en", "fr", "es", "ar", "it", "nl", "de"]
 }
+
