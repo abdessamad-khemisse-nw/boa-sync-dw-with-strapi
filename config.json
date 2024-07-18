@@ -51,49 +51,9 @@
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/legal-mentions/wordings"
     },
     {
-      "queryName": "OtherProductsWordingQuery",
-      "exportName": "OtherProducts",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/myspace/wordings"
-    },
-    {
-      "queryName": "ClientInfoStepQuery",
-      "exportName": "ClientInfoStepPage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings"
-    },
-    {
-      "queryName": "BankCardsPageQuery",
-      "exportName": "BankCardsPage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/bank-cards/wordings"
-    },
-    {
-      "queryName": "SeoOpenAccountQuery",
-      "exportName": "SeoOpenAccountPage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"
-    },
-    {
-      "queryName": "FAQPageQuery",
-      "exportName": "FAQPage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/faq/FAQPage/wordings"
-    },
-    {
-      "queryName": "ConventionWordingQuery",
-      "exportName": "ConventionWording",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/client-info-recap/wordings"
-    },
-    {
-      "queryName": "SatisfactionSurveyPageQuery",
-      "exportName": "SatisfactionSurveyPage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/satisfaction-survey/SatisfactionSurveyPage/wordings"
-    },
-    {
-      "queryName": "WelcomePageQuery",
-      "exportName": "WelcomePage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/welcome/wordings"
-    },
-    {
-      "queryName": "MySpacePageQuery",
-      "exportName": "MySpacePage",
-      "path": "../project-boa-agencedirecte-frontoffice/src/pages/myspace/components/MySpace/wordings"
+      "queryName": "DistributionPaymentQuery",
+      "exportName": "DistributionPayment",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/optional-deposit/components/OptionalDepositStep/wordings"
     }
 
   ],

@@ -19,6 +19,7 @@ import ConventionWordingQuery from "./queries/ConventionWordingQuery";
 import {SatisfactionSurveyPageQuery} from "./queries/SatisfactionSurveyPage";
 import {WelcomePageQuery} from "./queries/WelcomePageQuery";
 import {MySpacePageQuery} from "./queries/MySpacePageQuery";
+import {DistributionPaymentQuery} from "./queries/DistributionPaymentQuery";
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
 const queriesMap = {
@@ -40,7 +41,8 @@ const queriesMap = {
   ConventionWordingQuery,
   SatisfactionSurveyPageQuery,
   WelcomePageQuery,
-  MySpacePageQuery
+  MySpacePageQuery,
+  DistributionPaymentQuery
 };
 
 
