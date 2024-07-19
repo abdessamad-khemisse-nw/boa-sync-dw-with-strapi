@@ -89,9 +89,15 @@
       "queryName": "NotificationsQuery",
       "exportName": "Notifications",
       "path": "../project-boa-agencedirecte-frontoffice/src/commons/components/Notifications/CustomMessage/wordings"
+    },
+    {
+      "queryName": "DistributionPaymentQuery",
+      "exportName": "DistributionPayment",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/optional-deposit/components/OptionalDepositStep/wordings"
     }
 
   ],
   "mediaDir": "../project-boa-agencedirecte-frontoffice/public/backups",
   "languages": ["en", "fr", "es", "ar", "it", "nl", "de"]
 }
+
