@@ -94,6 +94,135 @@
       "queryName": "DistributionPaymentQuery",
       "exportName": "DistributionPayment",
       "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/optional-deposit/components/OptionalDepositStep/wordings"
+    },
+    {
+      "queryName": "packImagesQuery",
+      "exportName": "PackImages",
+      "path": "../project-boa-agencedirecte-frontoffice/src/commons/wordings",
+      "languageIndependent": true
+    },
+    {
+      "queryName": "PaysListQuery",
+      "exportName": "PaysList",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings",
+      "languageIndependent": true
+    },{
+      "queryName": "AgencyListQuery",
+      "exportName": "AgencyList",
+      "path": "../project-boa-agencedirecte-frontoffice/src/components/AccountForm/StepTwo/wordings",
+      "languageIndependent": true
+    },{
+      "queryName": "LandingPageQuery",
+      "exportName": "LandingPage",
+      "path": "out/LandingPage"
+    },
+    {
+      "queryName": "MrePageQuery",
+      "exportName": "MREPage",
+      "path": "out/MrePage"
+    },
+    {
+      "queryName": "ParticularPageQuery",
+      "exportName": "ParticularPage",
+      "path": "out/PartiuclarPage"
+    },
+    {
+      "queryName": "StudentPageQuery",
+      "exportName": "StudentPage",
+      "path": "out/StudentPage"
+    },
+    {
+      "queryName": "CreateAccountPageQuery",
+      "exportName": "CreateAccountPage",
+      "path": "out/CreateAccountPage"
+    },
+    {
+      "queryName": "PinnedOfferQuery",
+      "exportName": "PinnedOffer",
+      "path": "out/PinnedOffer"
+    },
+    {
+      "queryName": "VerificationStepWordingQuery",
+      "exportName": "VerificationStep",
+      "path": "out/VerificationStep"
+    },
+    {
+      "queryName": "ContactPageQuery",
+      "exportName": "ContactPage",
+      "path": "out/ContactPage"
+    },
+    {
+      "queryName": "ContactDetailsVerificationQuery",
+      "exportName": "ContactDetailsVerification",
+      "path": "out/ContactDetailsVerification"
+    },
+    {
+      "queryName": "MentionsLegalesPageQuery",
+      "exportName": "MentionsLegalesPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/legal-mentions/wordings"
+    },
+    {
+      "queryName": "OtherProductsWordingQuery",
+      "exportName": "OtherProducts",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/myspace/wordings"
+    },
+    {
+      "queryName": "ClientInfoStepQuery",
+      "exportName": "ClientInfoStepPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings"
+    },
+    {
+      "queryName": "BankCardsPageQuery",
+      "exportName": "BankCardsPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/bank-cards/wordings"
+    },
+    {
+      "queryName": "SeoOpenAccountQuery",
+      "exportName": "SeoOpenAccountPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/open-a-free-account/wordings"
+    },
+    {
+      "queryName": "FAQPageQuery",
+      "exportName": "FAQPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/faq/FAQPage/wordings"
+    },
+    {
+      "queryName": "ConventionWordingQuery",
+      "exportName": "ConventionWording",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/client-info-recap/wordings"
+    },
+    {
+      "queryName": "SatisfactionSurveyPageQuery",
+      "exportName": "SatisfactionSurveyPage",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/satisfaction-survey/SatisfactionSurveyPage/wordings"
+    },
+    {
+      "queryName": "NotificationsQuery",
+      "exportName": "Notifications",
+      "path": "../project-boa-agencedirecte-frontoffice/src/commons/components/Notifications/CustomMessage/wordings"
+    },
+    {
+      "queryName": "DistributionPaymentQuery",
+      "exportName": "DistributionPayment",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/optional-deposit/components/OptionalDepositStep/wordings"
+    },
+    {
+      "queryName": "packImagesQuery",
+      "exportName": "PackImages",
+      "path": "../project-boa-agencedirecte-frontoffice/src/commons/wordings",
+      "languageIndependent": true
+    },
+    {
+      "queryName": "PaysListQuery",
+      "exportName": "PaysList",
+      "path": "../project-boa-agencedirecte-frontoffice/src/pages/attachments-upload/features/account-info-step/wordings",
+      "languageIndependent": true
+    },
+    {
+      "queryName": "AgencyListQuery",
+      "exportName": "AgencyList",
+      "path": "../project-boa-agencedirecte-frontoffice/src/components/AccountForm/StepTwo/wordings",
+      "languageIndependent": true
     }
 
   ],
