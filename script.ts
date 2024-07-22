@@ -1,6 +1,5 @@
 import { LandingPageQuery } from './queries/LandingPage';
 import fs from 'node:fs';
-import { useWordingQueryOrDefault } from './utils/wording';
 import { MrePageQuery } from './queries/MrePage';
 import { ParticularPageQuery } from './queries/ParticularPage';
 import { StudentPageQuery } from './queries/StudentPage';
@@ -21,6 +20,10 @@ import { NotificationsQuery } from './queries/NotificationsQuery';
 import {WelcomePageQuery} from "./queries/WelcomePageQuery";
 import {MySpacePageQuery} from "./queries/MySpacePageQuery";
 import {DistributionPaymentQuery} from "./queries/DistributionPaymentQuery";
+import {packImagesQuery} from "./queries/PackImagesQuery";
+import {PaysListQuery} from "./queries/PaysListQuery";
+import {AgencyListQuery} from "./queries/AgencyListQuery";
+import {exportWording, useWordingQueryOrDefault} from "./utils/wording";
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -45,31 +48,25 @@ const queriesMap = {
   NotificationsQuery,
   WelcomePageQuery,
   MySpacePageQuery,
-  DistributionPaymentQuery
+  DistributionPaymentQuery,
+  packImagesQuery,
+  PaysListQuery,
+  AgencyListQuery
 };
 
 
 
-config.queries.forEach((queryConfig) => {
-  const queryName = queryConfig.queryName;
-  const exportName = queryConfig.exportName;
-  const queryPath = queryConfig.path;
-
-  config.languages.forEach((language) => {
-    useWordingQueryOrDefault(
-      queriesMap[queryName](language),
-      language,
-      config.mediaDir
-    ).then((data) => {
-      const filePath = `${queryPath}/${language}.ts`;
-      const fileContent = `export const ${exportName}${language.toUpperCase()} = ${JSON.stringify(data)}`;
-      fs.mkdirSync(queryPath, { recursive: true });
-
-      fs.writeFile(filePath, fileContent, (err) => {
-        if (err) {
-          console.log('Writing Query Error : ' + err);
-        }
-      });
-    });
+config.queries.forEach(async (queryConfig) => {
+  const { mediaDir } = config;
+  const languageIndependent = queryConfig.languageIndependent;
+  if(languageIndependent) {
+    exportWording(queriesMap, queryConfig ,'', languageIndependent, mediaDir)
+  }
+  else {
+    config.languages.forEach((language) => {
+    exportWording(queriesMap, queryConfig, language, languageIndependent, mediaDir)
   });
+  }
 });
+
+

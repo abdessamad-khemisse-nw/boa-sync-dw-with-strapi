@@ -101,3 +101,22 @@ async function saveMedia(url, directory) {
     throw error;
   }
 }
+
+export const exportWording = (queriesMap, queryConfig, language, languageIndependent, mediaDir) => {
+  const {queryName, path: queryPath, exportName} = queryConfig;
+  useWordingQueryOrDefault(
+      queriesMap[queryName](language),
+      language,
+      mediaDir
+  ).then((data) => {
+    const filePath = `${queryPath}/${languageIndependent? exportName : language}.ts`;
+    const fileContent = `export const ${exportName}${languageIndependent ? '' : language.toUpperCase() } = ${JSON.stringify(data)}`;
+    fs.mkdirSync(queryPath, { recursive: true });
+
+    fs.writeFile(filePath, fileContent, (err) => {
+      if (err) {
+        console.log('Writing Query Error : ' + err);
+      }
+    });
+  });
+}
