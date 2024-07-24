@@ -24,6 +24,7 @@ import {packImagesQuery} from "./queries/PackImagesQuery";
 import {PaysListQuery} from "./queries/PaysListQuery";
 import {AgencyListQuery} from "./queries/AgencyListQuery";
 import {exportWording, useWordingQueryOrDefault} from "./utils/wording";
+import { CommonWordingQuery } from './queries/CommonWordingQuery';
 
 const config = JSON.parse(fs.readFileSync('config.json', 'utf-8'));
 
@@ -51,7 +52,8 @@ const queriesMap = {
   DistributionPaymentQuery,
   packImagesQuery,
   PaysListQuery,
-  AgencyListQuery
+  AgencyListQuery,
+  CommonWordingQuery
 };
 
 
