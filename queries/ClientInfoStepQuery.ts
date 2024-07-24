@@ -16,6 +16,17 @@ export const ClientInfoStepQuery = (lang: string) => {
             ${lang}
           }
         }
+        oldClientPopup(id: 1){
+          title {
+            ${lang}
+          }
+          description {
+            ${lang}
+          }
+          buttonText {
+            ${lang}
+          }
+        }
         kycTerms {
           title {
             ${lang}
@@ -39,12 +50,6 @@ export const ClientInfoStepQuery = (lang: string) => {
           label_${lang}
           errorMsg_${lang}
           helperText_${lang}
-        }
-        paysLists {
-          allPays {
-            name
-            code
-          }
         }
         professionsLists {
           AllProfessions {
